@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
 
+    <TextView
+            android:id="@+id/tvNameApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Football Scoring"
+            android:textSize="55sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:id="@+id/tvSignAs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign As"
+            android:textSize="30sp"
+            android:layout_below="@id/tvNameApp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"/>
+    <Button
+            android:id="@+id/buttonOperator"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvSignAs"
+            android:background="@drawable/button"
+            android:text="Operator"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buttonOperator"/>
+    <Button
+        android:id="@+id/buttonUser"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="User"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvOr"/>
 
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

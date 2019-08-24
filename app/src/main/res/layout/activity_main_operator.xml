@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainOperatorActivity">
+
+    <TextView
+            android:id="@+id/tvLeague"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="League"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+    <RelativeLayout
+            android:id="@+id/headerLeague"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/tvLeague">
+
+        <TextView
+                android:id="@+id/noLeague"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/leagueName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="League"
+                android:layout_toLeftOf="@+id/iconEvent"
+                android:layout_toRightOf="@id/noLeague"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvLeague"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/headerLeague"
+            tools:listitem="@layout/custom_recview_league"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabLeague"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"/>
+</RelativeLayout>

@@ -31,7 +31,7 @@ class DataAdapter(private val context: Context, private val data: ArrayList<Data
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.custom_recview, parent, false))
+        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.custom_recview_user, parent, false))
     }
 
     override fun getItemCount(): Int {
